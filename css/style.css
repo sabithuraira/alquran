@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #83AF9B;
+    background-color: #339966;
     color: #FFFFFF;
     margin: 0px auto;
     padding: 20px;
@@ -22,20 +22,56 @@ header h1 {
     text-align: center;
 }
 
-button {
+input {
+	margin-top:10px;
     height: 35px;
-    width: 150px;
+    width: 100%;
     font-size: 20px;
     background-color: #ffffff;
     outline: 0 none;
-    color: #83AF9B;
+    color: #000;
     vertical-align: middle;
     border-radius: 0px;
     box-shadow: 0px 0px 0px 0px #ffffff;
 }
 
-#content-reply {
-    visibility: hidden;
+button {
+	margin-top:25px;
+    height: 35px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #ffffff;
+    outline: 0 none;
+    color: #000;
+    text-align:center;
+    vertical-align: middle;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px 0px #ffffff;
+}
+
+#err-message {
+    color: rgb(213, 43, 39);
+}
+
+img.head {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+img#img-load {
+	margin-top:15px;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    display: none;
+}
+
+img#message-img {
+	margin-top:5px;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
 }
 
 #img-icon {
@@ -44,4 +80,109 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.footer{
+	text-align:center;
+	margin-top: 50px;
+}
+
+#msg-box, #err-message{
+	display:none;
+}
+
+.message-box-wrapper {
+	margin-top: 20px;
+    position: relative;
+    margin-bottom: 40px;
+    min-height: 99px;
+    width: 90%;
+}
+
+.message-box-wrapper.left {
+    left: 18px;
+}
+
+.message-box-wrapper.right {
+    left: 112px;
+}
+
+.message-box-wrapper:before {
+    position: absolute;
+    width: 18px;
+    height: 36px;
+    top: 44px;
+    content: '';
+    display: block;
+}
+
+.message-box {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.left .message-box {
+    background-color: #fff;
+}
+
+.message-header {
+    color: rgb(213, 43, 39);
+}
+
+.message-content {
+    font-weight: lighter;
+    color: #000;
+}
+
+
+table{
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.class-content{
+	background-color: #006633;
+    border-collapse: collapse;
+}
+
+.class-content td {
+	padding: 5px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.class-content tr:nth-child(even) {
+	background-color: #33cc66;
+}
+
+.produk span{
+	padding-left: 2px;	
+}
+
+.produk span.name{ 
+	margin-top: 3px;
+}
+
+.produk span.produsen{  
+	display: block;
+	margin-top:6px;
+	margin-bottom:3px;
+}
+
+.status{  
+	text-align: right !important;
+}
+
+.status span.sertifikat{ 
+	margin-top: 3px;
+}
+
+.status span.berlaku{  
+	display: block;
+	margin-top:6px;
+	margin-bottom:3px;
 }
